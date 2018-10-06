@@ -30,7 +30,7 @@
             @include respond-to(small) {
                 max-width: $wrapper-width+80px;
             }
-            &.kg-image-wide {
+            @at-root .content figure.kg-image-card.kg-width-full img.kg-image {
                 max-width: 100vw;
 
                 @include respond-to(medium) {
@@ -43,7 +43,7 @@
                     max-width: $wrapper-width+600px;
                 }
             }
-            &.kg-image-full {
+            @at-root .content figure.kg-image-card.kg-width-wide img.kg-image {
                 max-width: 100vw;
                 width: 100vw;
             }
