@@ -87,16 +87,16 @@
         height: 400px;
 
         @include respond-to(tiny) {
-            height: 500px;
+            height: 250px;
         }
         @include respond-to(small) {
-            height: 600px;
+            height: 300px;
         }
         @include respond-to(medium) {
-            height: 700px;
+            height: 350px;
         }
         @include respond-to(large) {
-            height: 700px;
+            height: 350px;
         }
 
         .hero-content {
