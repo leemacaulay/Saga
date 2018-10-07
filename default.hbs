@@ -11,6 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="{{asset 'css/style.min.css'}}" rel="stylesheet" type="text/css">
     <link href="{{asset 'favicon.ico'}}" rel="shortcut icon">
+    <!-- CSS for Plyr.io -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.4.4/plyr.css">
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
@@ -20,8 +22,8 @@
         {{> footer}}
     </footer>
     {{ghost_foot}}
-    <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.24.5'><\/script>".replace("HOST", location.hostname));
-    //]]></script>
+    <!-- initialise Plyr.io -->
+    <script src="https://cdn.plyr.io/3.4.4/plyr.polyfilled.js"></script>
+    <script>const player = new Plyr('#player');</script>
 </body>
 </html>
