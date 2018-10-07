@@ -1,0 +1,20 @@
+.content {
+  .audio-player {
+
+  img{
+    width: 100%;
+    margin-left:auto;
+  }
+
+  figcaption:before {
+    content: "\266b\ ";
+
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    }
+  }
+}
