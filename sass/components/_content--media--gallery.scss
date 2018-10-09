@@ -1,11 +1,45 @@
 .content {
+  figure.kg-gallery-card {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    margin-top: 20px;
+    margin-right: -50vw;
+    margin-bottom: 20px;
+    margin-left: -50vw;
+    width: 100vw;
+
+    @include respond-to(small) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
   .kg-gallery-container {
     margin-top: 20px;
     margin-bottom: 20px;
     margin: 0 auto;
     max-width: calc(100vw - 40px);
     width: initial;
+
+        @include respond-to(medium) {
+            max-width: $wrapper-width+200px;
+        }
+        @include respond-to(large) {
+            max-width: $wrapper-width+400px;
+        }
+        @include respond-to(huge) {
+            max-width: $wrapper-width+600px;
+        }
   }
+
+  figcaption {
+      text-align: center;
+      font-size: 14px;
+      line-height: 50px;
+
+  }
+
+}
 
   .kg-gallery-row {
       display: flex;
