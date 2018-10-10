@@ -33,7 +33,7 @@
             height: 100%;
             background: rgba(0,0,0,.8);
             @include respond-to(small) {
-                background: rgba(0,0,0,.7);
+                background: rgba(0,0,0,.8);
             }
         }
 
@@ -111,7 +111,7 @@
         .post--excerpt {
             margin: 15px 0;
             max-width: $small;
-            color: rgba(255,255,255,.6);
+            color: rgba(255,255,255,.8);
             font-size: 14px;
             font-size: 1.4rem;
         }
