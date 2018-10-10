@@ -5,13 +5,12 @@
                 {{#if tags}}
                     <span class="post--tags"> {{tags class="tag" prefix="" separator=" "}}</span>
                 {{/if}}
-                <h2 class="post--title"><a href="{{url}}">{{{title}}}</a></h2>
+                <h3 class="post--title"><a href="{{url}}">{{{title}}}</a></h2>
                 <p class="post--excerpt">{{excerpt words=25}}…</p>
-                <p class="post--read-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</p>
             </section>
             <section class="post--bottom-content">
                     <span class="post--meta">
-                        {{#author}}<span class="date">{{t "Posted by"}} <span class="author"><a href="{{url}}">{{name}}</a></span>{{/author}} <a href="{{url}}"><time class="timesince" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='YYYY-MM-DD HH:mm'}}">{{date published_at timeago='true'}}</time></a></span>
+                        <span class="date">{{t "Posted"}} <a href="{{url}}"><time class="timesince" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='YYYY-MM-DD HH:mm'}}">{{date published_at timeago='true'}}</time></a></span>
                     </span>
                 </section>
         </article>
