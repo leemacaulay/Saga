@@ -1,20 +1,20 @@
 .content {
-  .audio-player {
 
-  img{
+  figure.kg-image-card.audio-player img {
     width: 100%;
+    max-width: 600px;
     margin-left:auto;
   }
 
-  figcaption:before {
+  div.plyr--audio + figcaption:before {
     content: "\266b\ ";
 
   }
 
-  figcaption {
+  div.plyr--audio + figcaption {
     text-align: center;
     font-size: 14px;
     line-height: 50px;
     }
+
   }
-}

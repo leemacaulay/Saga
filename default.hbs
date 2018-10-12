@@ -24,6 +24,9 @@
     {{ghost_foot}}
     <!-- initialise Plyr.io -->
     <script src="https://cdn.plyr.io/3.4.4/plyr.polyfilled.js"></script>
-    <script>const players = Plyr.setup('.player');</script>
+    <script>const players = Plyr.setup('audio');</script>
+    <!-- initialise jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>$("div.plyr").prev("figure").addClass("audio-player");</script>
 </body>
 </html>
