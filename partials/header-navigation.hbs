@@ -3,8 +3,8 @@
         {{#if @blog.logo}}
             <img class="blog-logo" src="{{@blog.logo}}" alt="Blog Logo" />
         {{else}}
-        {{/if}}
             {{@blog.title}}
+        {{/if}}
     </a>
     {{#is "home"}}{{#unless @blog.cover_image}}
         <span class="blog-description">{{@blog.description}}</span>
